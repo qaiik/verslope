@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+        document.body.style.margin = "0";
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden";
+    });
+</script>
+<html lang="en-us">
+
+<head>
+  <script>
+    console.log = () => {}
+    console.warn = () => {}
+    console.error = () => {}
+  </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>gbaal:slope [y8]</title>
+    <link href="shared/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="TemplateData56/style.css" />
+    <script src="TemplateData56/UnityProgress.js"></script>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="Build/UnityLoader.js"></script>
+    </script> -->
+    <script>
+        window.rWS = WebSocket, WebSocket = function(t, e) {
+            var n = t.split("://"),
+                o = "";
+            if (t.includes("arc.io")) return new window.rWS(t, e);
+            switch (console.log("arced"), n[0].toLowerCase()) {
+                case "ws":
+                    o = "wss://onebigorange-tmm.tbt.mx/websocket/http://";
+                    break;
+                case "wss":
+                    o = "wss://onebigorange-tmm.tbt.mx/websocket/https://";
+                    break;
+                default:
+                    o = n[0]
+            }
+            return new(Function.prototype.bind.call(window.rWS, null, 0 === (n[1].match(/\//g) || []).length ? n[1].includes("?") ? o + n[1].replace("?", "/?") : o + n[1] + "/" : o + n[1], e))
+        };
+        var origOpen = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function(...t) {
+            t[1].includes("arc.io") || (t[1] = /^http/.test(t[1]) ? "https://onebigstatic-tmm.tbt.mx/static/" + t[1] : t[1]), origOpen.apply(this, t)
+        };
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope_27Sept.json", {
+            onProgress: UnityProgress,
+            Module: {
+                onRuntimeInitialized: function() {
+                    UnityProgress(gameInstance, "complete")
+                }
+            }
+        });
+    </script>
+    </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-98DP5VKS42");
+        </script> -->
+    <script src="./shared/lib.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 100vw; height: 100vh;"></div>
+    </div>
+    
+    <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7961039&style=0001&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0" /></a>
+
+</body>
+
+</html>
